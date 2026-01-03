@@ -15,6 +15,7 @@ const joiSchema = Joi.object({
 @Module({
   imports: [
     NestConfigModule.forRoot({
+      isGlobal: true,
       envFilePath,
       validationSchema: joiSchema,
     }),
