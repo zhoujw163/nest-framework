@@ -4,7 +4,9 @@
   "sourceRoot": "src",
   "compilerOptions": {
     "deleteOutDir": true,
-    "builder": "swc"
+    "builder": "swc",
+    "watchAssets": true,
+    "assets": ["common/mail/templates/**/*.hbs", "assets/**/*"]
   },
   "generateOptions": {
     "spec": false
